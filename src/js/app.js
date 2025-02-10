@@ -20,7 +20,7 @@ async function fetchWeather(city) {
                 <img src="${iconUrl}" alt="${weatherDescription}" />
                 Temperatura: ${temperature.toFixed(2)}°C - ${weatherDescription}`;
         } else {
-            document.getElementById('weather').innerText = 'Cidade não encontrada!';
+            document.getElementById('weather').ATTRIBUTE_NODE.innerText = 'Cidade não encontrada!';
         }
     } catch (error) {
         console.error('Erro ao buscar dados do clima:', error);
