@@ -4,7 +4,7 @@ async function fetchWeather(city) {
     try {
         document.getElementById('loader').style.display = 'block';
 
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Brazil}&appid=${d239763a89ab4bb2fc1a4881809e74c1}&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
         
         const data = await response.json();
 
@@ -30,10 +30,5 @@ async function fetchWeather(city) {
 document.addEventListener("DOMContentLoaded", () => {
      fetchWeather('Aracaju');
 
-     document.getElementById('search-button').addEventListener('click', () => {
-          const city = document.getElementById('city-input').value;
-          if(city){
-               fetchWeather(city);
-          }
-     })
+     document.getElementById('search-button').addEventListener('click')
 });
