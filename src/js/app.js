@@ -4,7 +4,7 @@ async function fetchWeather(city) {
     try {
         document.getElementById('loader').style.display = 'block';
 
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${d239763a89ab4bb2fc1a4881809e74c1}&units=metric`);
         
         const data = await response.json();
 
