@@ -1,4 +1,4 @@
-const apiKey = 'd239763a89ab4bb2fc1a4881809e74c1'; 
+const apiKey = '28ea660e04d1d806246eab9d80d120d7'; 
 
 async function fetchWeather(city) {
     try {
